@@ -29,7 +29,9 @@ for e in izz:
                 r2.cmd(csa)
 ```
 
-Just use this script (#!pipe python3 poc.py) inside your r2 session:
+This script search all C-STRING-STYLE in .text section and mark each one like string 
+
+Just use this script with "#!pipe python3 poc.py" command inside your r2 session:
 ```
 dreg@fr33project:~# r2 64sudorevshell
 [0x00401000]> #!pipe python3 poc.py
