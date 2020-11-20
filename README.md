@@ -1,6 +1,6 @@
 # call_trick_r2pipe
 
-Are you using radare for reversing or debugging a shellcode/malware with a lot of call tricks like these:
+Are you using radare for reversing or debugging a shellcode/malware with a lot of call tricks for strings like these:
 
 ```
 call @f
