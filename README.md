@@ -13,7 +13,7 @@ db "string2",0
 more code
 ```
 
-Try this script to fix disasm:
+Try this r2pipe (https://www.radare.org/n/r2pipe.html) script to fix disasm:
  ```
 import r2pipe
 import json
