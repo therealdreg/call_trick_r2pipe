@@ -73,6 +73,8 @@ Csa 10 @4199095
 
 Before:
 
+[[https://github.com/David-Reguera-Garcia-Dreg/call_trick_r2pipe/before.pngg]]
+
 [[before.png]]
 
 After:
