@@ -81,7 +81,7 @@ Csa 10 @4199095
 
 ![alt text](after.png)
 
-
+Greetz to Maijin for hints in #radare channel
            
 
 
