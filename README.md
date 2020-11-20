@@ -2,6 +2,7 @@
 
 Are you using radare for reversing or debugging a shellcode/malware with a lot of:
 
+```
 call @f
 db "string1",0
 @f:
@@ -10,6 +11,7 @@ call @g:
 db "string2",0
 @g:
 more code
+```
 
 Try this script to fix disasm:
  ```
