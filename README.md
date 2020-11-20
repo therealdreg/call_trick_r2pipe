@@ -15,18 +15,18 @@ more code
 
 Try this r2pipe (https://www.radare.org/n/r2pipe.html) script to fix disasm:
  ```
+# run inside r2 session: #!pipe python3 poc.py
+
 import r2pipe
-import json
 
 r2 = r2pipe.open()
 r2.cmd('aaaa')
 print(r2.cmd("izz"))
-izz = json.loads(r2.cmd("izzj"))
-for e in izz:
-        if e['type'] == "ascii" and e['section'] == ".text":
-                csa = "Csa " + str(e['size']) + " @" + str(e['vaddr'])
-                print(csa)
-                r2.cmd(csa)
+for e in r2.cmdj("izzj"):
+       if e['type'] == "ascii" and e['section'] == ".text":
+               csa = f"Csa {e['size']} @ { e['vaddr']}"
+               print(csa)
+               r2.cmd(csa)
 ```
 
 This script search all C-STRING-STYLE in .text section and mark each one like string 
