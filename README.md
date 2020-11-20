@@ -71,14 +71,13 @@ Csa 10 @4199095
 [0x00401000]>
 ```
 
-Before:
-
+# Before
 
 ![alt text](before.png)
 
-After:
+# After
 
-[[after.png]]
+![alt text](after.png)
 
 
            
