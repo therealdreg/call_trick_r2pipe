@@ -20,7 +20,6 @@ Try this r2pipe (https://www.radare.org/n/r2pipe.html) script to fix disasm:
 import r2pipe
 
 r2 = r2pipe.open()
-# r2.cmd('aaaa')
 print(r2.cmd("izz"))
 for e in r2.cmdj("izzj"):
        if e['type'] == "ascii" and e['section'] == ".text":
