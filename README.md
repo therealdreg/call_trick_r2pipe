@@ -34,16 +34,6 @@ Just use this script with "#!pipe python3 poc.py" command inside your r2 session
 ```
 dreg@fr33project:~# r2 64sudorevshell
 [0x00401000]> #!pipe python3 poc.py
-
-[x] Analyze all flags starting with sym. and entry0 (aa)
-[x] Analyze function calls (aac)
-[x] Analyze len bytes of instructions for references (aar)
-[x] Check for vtables
-[x] Type matching analysis for all functions (aaft)
-[x] Propagate noreturn information
-[x] Use -AA or aaaa to perform additional experimental analysis.
-[x] Finding function preludes
-[x] Enable constraint types analysis for variables
 [Strings]
 nth paddr      vaddr      len size section   type  string
 ---------------------------------------------------------
