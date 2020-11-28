@@ -15,9 +15,8 @@ more code
 
 Try this r2pipe (https://www.radare.org/n/r2pipe.html) script to fix disasm:
  ```
-#!/usr/bin/env python3
- 
-# Python 3.6, run inside r2 session: #!pipe python3 poc.py
+#!/usr/bin/env python
+# run inside r2 session: #!pipe python3 poc.py
 
 import r2pipe
 
@@ -25,7 +24,8 @@ r2 = r2pipe.open()
 print(r2.cmd("izz"))
 for e in r2.cmdj("izzj"):
        if e['type'] == "ascii" and e['section'] == ".text":
-               csa = f"Csa {e['size']} @ { e['vaddr']}"
+               # csa = f"Csa {e['size']} @ { e['vaddr']}"
+               csa = "Csa " + str(e['size']) + " @" + str(e['vaddr'])
                print(csa)
                r2.cmd(csa)
 ```
