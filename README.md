@@ -15,6 +15,8 @@ more code
 
 Try this r2pipe (https://www.radare.org/n/r2pipe.html) script to fix disasm:
  ```
+#!/usr/bin/env python3
+ 
 # Python 3.6, run inside r2 session: #!pipe python3 poc.py
 
 import r2pipe
